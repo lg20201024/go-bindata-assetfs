@@ -28,6 +28,8 @@ The generated file provides an `AssetFS()` function that returns a `http.Filesys
 wrapping the embedded files. What you usually want to do is:
 
     http.Handle("/", http.FileServer(AssetFS()))
+    // or using custom url path
+    http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(assets.AssetFS())))
 
 This would run an HTTP server serving the embedded files.
 
