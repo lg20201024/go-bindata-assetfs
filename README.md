@@ -24,10 +24,10 @@ A typical use case is
 
 ### Using assetFS in your code
 
-The generated file provides an `assetFS()` function that returns a `http.Filesystem`
+The generated file provides an `AssetFS()` function that returns a `http.Filesystem`
 wrapping the embedded files. What you usually want to do is:
 
-    http.Handle("/", http.FileServer(assetFS()))
+    http.Handle("/", http.FileServer(AssetFS()))
 
 This would run an HTTP server serving the embedded files.
 
