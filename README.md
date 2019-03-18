@@ -9,7 +9,7 @@ Serve embedded files from [jteeuwen/go-bindata](https://github.com/jteeuwen/go-b
 Install with
 
     $ go get github.com/jteeuwen/go-bindata/...
-    $ go get github.com/elazarl/go-bindata-assetfs/...
+    $ go get github.com/moxiaomomo/go-bindata-assetfs/...
 
 ### Creating embedded data
 
@@ -37,7 +37,7 @@ You can always just run the `go-bindata` tool, and then
 
 use
 
-     import "github.com/elazarl/go-bindata-assetfs"
+     import "github.com/moxiaomomo/go-bindata-assetfs"
      ...
      http.Handle("/",
         http.FileServer(
